@@ -1,0 +1,8 @@
+{
+  "name": "poc-client-website-host",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mhsalves/poc-client-website-host.git",
+  "author": "Matheus Alves <matheus.alves@meliuz.com.br>",
+  "license": "MIT"
+}
