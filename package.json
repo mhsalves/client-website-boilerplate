@@ -1,14 +1,19 @@
 {
-  "name": "poc-client-website-host",
+  "name": "@mhsalves/poc-client-website-host",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:mhsalves/poc-client-website-host.git",
   "author": "Matheus Alves <matheus.alves@meliuz.com.br>",
   "license": "MIT",
+  "private": "true",
+  "workspaces": {
+    "packages": ["node_modules/@mhsalves/**"]
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "start:dev": "engine -c engineConfig.json"
   },
   "dependencies": {
     "eslint-config-next": "^13.2.1",
@@ -19,6 +24,8 @@
   "devDependencies": {
     "@types/node": "18.14.2",
     "@types/react": "18.0.28",
+    "@mhsalves/client-website-cli": "git+ssh://git@github.com/mhsalves/poc-client-website-cli.git#release",
+    "@mhsalves/client-website-remote": "git+ssh://git@github.com/mhsalves/poc-client-website-remote.git#release",
     "typescript": "4.9.5"
   }
 }
